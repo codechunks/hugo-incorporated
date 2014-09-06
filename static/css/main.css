@@ -2017,7 +2017,7 @@ body {
   margin: 0;
   border: 0;
   padding: 80px 0 0;
-  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #21272d;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
@@ -2035,7 +2035,7 @@ h1, h2, h3, h4, h5 {
   color: #263c4c; }
 
 h1, h2 {
-  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 a {
   color: #2077b2;
@@ -2050,12 +2050,14 @@ a {
   margin: 0 auto; }
 
 .article-cover, .blog-cover {
-  max-width: 100%;
+  width: 100%;
   margin-top: 0;
   position: relative;
-  max-height: 460px;
+  height: 460px;
   overflow: hidden;
-  background: #eee; }
+  background-color: #111;
+  background-size: cover;
+  background-position: center center; }
   .article-cover > div, .blog-cover > div {
     max-height: 480px;
     line-height: 0; }
@@ -2080,9 +2082,6 @@ a {
 
 .blog-cover {
   height: 320px;
-  background-color: #111;
-  background-size: cover;
-  background-position: center center;
   z-index: 1; }
   .blog-cover section {
     text-align: center;
@@ -2288,7 +2287,7 @@ article {
   padding: 60px 0;
   font-size: 18px; }
   article .container > header, article .container > section, article .container > footer {
-    margin: 0 8em; }
+    margin: 0 3em; }
   article .social {
     height: 40px;
     padding: 10px 0; }
@@ -2345,14 +2344,21 @@ article {
       margin-bottom: 0.5em; }
   article blockquote {
     border: 0;
-    font-size: 24px;
-    margin: 1.2em -4em 1.2em 0;
-    padding: 0; }
+    border-left: 4px solid #eee;
+    font-size: 21px;
+    margin: 2em 0;
+    padding: 0;
+    padding-left: 1em; }
     article blockquote p {
       font-size: 30px;
       line-height: 1.1;
       color: #2077b2;
-      font-weight: 600; }
+      font-weight: 600;
+      margin-bottom: 0.2em; }
+    article blockquote footer {
+      text-align: right; }
+      article blockquote footer cite {
+        font-style: italic; }
   article h1 {
     font-weight: 600;
     font-size: 2.1em;
@@ -2606,15 +2612,15 @@ article {
 
 /* Literal.Number */
 .highlight .s {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String */
 .highlight .na {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Attribute */
 .highlight .nb {
-  color: #0086b3; }
+  color: #0086B3; }
 
 /* Name.Builtin */
 .highlight .nc {
@@ -2623,11 +2629,11 @@ article {
 
 /* Name.Class */
 .highlight .no {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Constant */
 .highlight .ni {
-  color: purple; }
+  color: #800080; }
 
 /* Name.Entity */
 .highlight .ne {
@@ -2645,11 +2651,11 @@ article {
 
 /* Name.Namespace */
 .highlight .nt {
-  color: navy; }
+  color: #000080; }
 
 /* Name.Tag */
 .highlight .nv {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable */
 .highlight .ow {
@@ -2677,35 +2683,35 @@ article {
 
 /* Literal.Number.Oct */
 .highlight .sb {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Backtick */
 .highlight .sc {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Char */
 .highlight .sd {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Doc */
 .highlight .s2 {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Double */
 .highlight .se {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Escape */
 .highlight .sh {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Heredoc */
 .highlight .si {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Interpol */
 .highlight .sx {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Other */
 .highlight .sr {
@@ -2713,7 +2719,7 @@ article {
 
 /* Literal.String.Regex */
 .highlight .s1 {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Single */
 .highlight .ss {
@@ -2725,15 +2731,15 @@ article {
 
 /* Name.Builtin.Pseudo */
 .highlight .vc {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable.Class */
 .highlight .vg {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable.Global */
 .highlight .vi {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable.Instance */
 .highlight .il {
@@ -2812,3 +2818,5 @@ article {
       margin: 0; }
     .index img {
       display: none; } }
+
+/*# sourceMappingURL=main.css.map */
