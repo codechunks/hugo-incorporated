@@ -1,10 +1,6 @@
 {{ template "theme/partials/header.html" . }}
 {{ with .Params.coverimage }}
-<div class="article-cover">
-    <div>
-        <img src="/images/{{ . }}" class="image">
-    </div>
-</div>
+<div class="article-cover" style="background-image:url(/images/{{ . }})"></div>
 {{ end }}
 <article>
 
